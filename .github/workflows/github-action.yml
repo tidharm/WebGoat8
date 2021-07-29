@@ -23,8 +23,8 @@ jobs:
     - name: WhiteSource Scan
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        WS_APIKEY: ${{secrets.APIKEY}}
-        WS_USERKEY: ${{secrets.USERKEY}}
+        WS_APIKEY: ${{secrets.WS_APIKEY}}
+        WS_USERKEY: ${{secrets.WS_USERKEY}}
       run: |
         cat <<EOF > eua.config
         apiKey=$WS_APIKEY
