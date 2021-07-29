@@ -30,8 +30,8 @@ jobs:
         apiKey=$WS_APIKEY
         userKey=$WS_USERKEY
         wss.url=https://saas-eu.whitesourcesoftware.com/agent
-        productName="GH_${{ github.event.repository.name }}"
-        projectName="${{ github.ref }} (EUA)""
+        productName=GH_${{ github.event.repository.name }}
+        projectName=${{ github.ref }} (EUA)
         enableImpactAnalysis=true
         requireKnownSha1=false
         resolveAllDependencies=false
